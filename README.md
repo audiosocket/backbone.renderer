@@ -42,7 +42,7 @@ view. You can use there the various insertion methods. For instance:
   rendered: ->
     """
       <h1>You account informations</h1>
-      #{@insertView @account.el}
+      #{@insertView @account}
     """
 ```
 
