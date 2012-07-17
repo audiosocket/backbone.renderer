@@ -1,0 +1,35 @@
+{
+  "name": "backbone.renderer",
+  "description": "Views rendering extension for backbone.js",
+  "version": "0.0.1",
+  "homepage": "http://github.com/audiosocket/backbone.renderer",
+  "author": "Audiosocket <tech@audiosocket.com>",
+  "repository":
+    {
+      "type":"git",
+      "url":"git://github.com/audiosocket/backbone.renderer.git"
+    },
+  "bugs":
+    {
+      "mail":"tech@audiosocket.com",
+      "url":"http://github.com/audiosocket/backbone.renderer/issues"
+    },
+  "main": "backbone.renderer.js",
+  "lib": ".",
+  "licences":
+    [
+      {
+        "type":"MIT",
+        "url": "http://www.opensource.org/licenses/MIT"
+      }
+    ],
+  "dependencies": {
+    "backbone"           : "0.9.2",
+    "backbone.modelizer" : "git://github.com/audiosocket/backbone.modelizer.git",
+    "jquery"             : "1.7.3",
+    "underscore"         : "1.3.3"
+  },
+  "devDependencies" : {
+    "coffee-script" : "1.3.1"
+  }
+}
