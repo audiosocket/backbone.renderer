@@ -27,7 +27,7 @@ A views descending from a parent view must be declared using `@createChild`. For
 ```
 class App.View.Store extends Backbone.View
   initialize: ->
-    @account = @createChild App.View.Account
+    @account = @createChild App.View.Account, id: @model.get("account")
 ```
 
 You do not need to write the corresponding `@removeChild` as this is done implicetely when calling `view.remove()`.
