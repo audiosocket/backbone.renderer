@@ -1,5 +1,5 @@
-backbone.renderify
-==================
+backbone.renderer
+=================
 
 backbone.renderer provides useful extensions for managing [Backbone](http://backbonejs.org/)'s views rendering.
 
