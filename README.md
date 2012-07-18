@@ -72,5 +72,5 @@ call `model.retain()` on a view's model, if it exists, when initializing the vie
 Using
 =====
 
-You should include `backbone.renderify.js` after including `jquery`, `underscore`, `backbone.js`
+You should include `backbone.renderer.js` after including `jquery`, `underscore`, `backbone.js`
 and `backbone.modelizer.js` and before including any of your model classes.
