@@ -56,12 +56,6 @@ Removing views
 
 You can call `view.remove()` to remove a view. It will also recursively call `remove` on all its herarchy of sub-views.
 
-Backbone.Ancestry
------------------
-
-Child management is done using the mixin `Backbone.Ancestry`. You may refer to its code as it may also be 
-useful for your application.
-
 backbone.modelizer
 ------------------
 
@@ -72,5 +66,7 @@ call `model.retain()` on a view's model, if it exists, when initializing the vie
 Using
 =====
 
-You should include `backbone.renderer.js` after including `jquery`, `underscore`, `backbone.js`
+`backbone.renderer` requires the mixin `Backbone.Ancestry`, which can be grabbed from [backbone.mixins](https://github.com/audiosocket/backbone.mixins).
+
+You should include `backbone.renderer.js` after including `jquery`, `underscore`, `backbone.js`, `ancestry.js`
 and `backbone.modelizer.js` and before including any of your model classes.
