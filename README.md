@@ -30,7 +30,7 @@ class App.View.Store extends Backbone.View
     @account = @createChild App.View.Account, id: @model.get("account")
 ```
 
-You do not need to write the corresponding `@removeChild` as this is done implicetely when calling `view.remove()`.
+You do not need to write the corresponding `@removeChild` as this is done implicitely when calling `view.remove()`.
 
 Rendering views
 ---------------
@@ -39,7 +39,7 @@ In order to render views, you need to provide a `renderer` method, which should 
 view. You can use there the various insertion methods. For instance:
 
 ```
-  rendered: ->
+  renderer: ->
     """
       <h1>You account informations</h1>
       #{@insertView @account}
