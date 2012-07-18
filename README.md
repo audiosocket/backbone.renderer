@@ -68,5 +68,5 @@ Using
 
 `backbone.renderer` requires the mixin `Backbone.Ancestry`, which can be grabbed from [backbone.mixins](https://github.com/audiosocket/backbone.mixins).
 
-You should include `backbone.renderer.js` after including `jquery`, `underscore`, `backbone.js`, `ancestry.js`
+You should include `backbone.renderer.js` after including `jquery`, `underscore`, `backbone.js`, `backbone.mixins.js`
 and `backbone.modelizer.js` and before including any of your model classes.
