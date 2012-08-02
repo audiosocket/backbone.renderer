@@ -23,7 +23,7 @@
     function View(options) {
       var _ref;
       if ((options != null ? (_ref = options.model) != null ? _ref.retain : void 0 : void 0) != null) {
-        options.model.retain();
+        options.model.retain(this);
       }
       this.insertedElements = {};
       View.__super__.constructor.apply(this, arguments);
@@ -59,7 +59,7 @@
       var _ref;
       this.trigger("removing");
       if (((_ref = this.model) != null ? _ref.release : void 0) != null) {
-        this.model.release();
+        this.model.release(this);
       }
       View.__super__.remove.apply(this, arguments);
       this.off();

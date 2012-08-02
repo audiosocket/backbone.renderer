@@ -10,7 +10,7 @@ class Backbone.View extends Backbone.View
 
   constructor: (options) ->
     # Retain model if we have one.
-    options.model.retain() if options?.model?.retain?
+    options.model.retain this if options?.model?.retain?
 
     # Initialize empty insertedElements
     @insertedElements = {}
@@ -50,7 +50,7 @@ class Backbone.View extends Backbone.View
 
     # Release our model if we had one.
 
-    @model.release() if @model?.release?
+    @model.release this if @model?.release?
 
     # Remove from the DOM.
 
